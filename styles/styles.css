@@ -1,0 +1,107 @@
+/* ============================
+   FONT IMPORTS
+   ============================ */
+@font-face {
+    font-family: 'KidDos';
+    src: url('../fonts/KidDos.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Garet Book';
+    src: url('../fonts/garet.book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Global paragraph font */
+body, p, ul, li {
+    font-family: 'Garet Book', sans-serif;
+}
+/* Heading font */
+h1, h2, h3, h4, h5 {
+    font-family: 'KidDos', sans-serif;
+}
+/* ============================
+   COLOR PALETTE
+   ============================ */
+:root {
+    --primary: #D0909F;
+    --secondary: #FEDBD2;
+    --accent1: #FD8667;
+    --accent2: #0EAFB4;
+
+    --text-dark: #333;
+    --text-light: #ffffff;
+}
+/* ============================
+   GLOBAL STYLES
+   ============================ */
+body {
+    margin: 0;
+    font-family: 'Garet Book', sans-serif;
+    background-color: white;
+    color: var(--text-dark);
+}
+img {
+    max-width: 100%;
+}
+/* ============================
+   HEADER
+   ============================ */
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+header .logo img {
+    height: 60px;
+}
+nav a {
+    color: var(--text-light);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+nav a:hover {
+    color: var(--accent2);
+}
+/* ============================
+   HERO SECTION
+   ============================ */
+.hero {
+    background-color: var(--secondary);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.hero h1 {
+    font-family: 'KidDos', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.hero p {
+    font-size: 1.25rem;
+}
+/* ============================
+   MAIN CONTENT
+   ============================ */
+.content {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+.content h2 {
+    font-family: 'KidDos', sans-serif;
+    font-size: 2rem;
+    color: var(--accent1);
+}
+.content ul {
+    margin-left: 1.2rem;
+    line-height: 1.6;
+}
+.content p {
+    line-height: 1.7;
+    margin: 1rem 0;
+}
